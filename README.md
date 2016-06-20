@@ -6,6 +6,6 @@ For the moment, i have done a red dot moving with the arrow keys. You can look a
 
 The project is in continuous developing.
 
-There is a GitHub Page branch, with the following url: [https://terrbox.github.io/JsGameTest/](URL "GitHub Page")
+There is a GitHub Page branch, with the following url: https://terrbox.github.io/JsGameTest/
 
 At your service.

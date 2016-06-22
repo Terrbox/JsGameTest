@@ -1,7 +1,8 @@
 function initController(){
 	var up=false, down=false, left=false, right=false;
 	var inUp, inDown, inLeft, inRight;
-	
+	var mcHeight = $mc.height(), mcWidth= $mc.width();
+
 	$(document).keydown(function(ev){
 			switch(ev.which){
 			case 40:
@@ -9,7 +10,7 @@ function initController(){
 					inDown=	setInterval(
 							function(){
 								var top=parseFloat($mc.css("top"));
-								if(top<=height-35-80){$mc.css("top", top+10);}
+								if(top<=height-35-mcHeight){$mc.css("top", top+10);}
 							}, 15);
 						down=true;
 					}
@@ -32,7 +33,7 @@ function initController(){
 					inRight=  setInterval(
 							function(){
 								var left=parseFloat($mc.css("left"));
-								if(left<=width-35-80){$mc.css("left", left+10);}
+								if(left<=width-35-mcWidth){$mc.css("left", left+10);}
 							}, 15);
 						right=true;
 					}

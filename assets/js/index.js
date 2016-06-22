@@ -32,7 +32,7 @@
 
 	var enemy = function(){
 		this.$enemy = $('<div class="enemy"></div>');
-		var random= new randomEnemyPos().pos[Math.round(Math.random()*3)];
+		var random= new randomEnemyPos().pos[/*Math.round(Math.random()*3)*/0];
 
 		this.$enemy
 			.css(random);
